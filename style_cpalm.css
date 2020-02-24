@@ -1,0 +1,186 @@
+/*Police*/
+*
+{
+    font-family: "Times New Roman", Arial, "Courier New", Serif;
+}
+/*Mise en forme de la bannière*/
+header
+{
+    display: flex;
+    justify-content: center;
+}
+/*Mise en page de l'ensemble des photos*/
+img
+{
+    width: 100%;
+}
+/*Mise en forme générale*/
+body
+{
+    background-color:rgb(52,129,169);
+}
+/*Mise en forme du bloc de la page*/
+.bloc_page
+{
+    width: 900px;
+    margin: auto;
+    background-color:rgb(30,33,33);
+    max-width: 900px;
+}
+/*Corps*/
+section
+{
+    display: flex;
+}
+
+/*Mise en forme du menu*/
+nav .element_menu ul
+{
+    list-style-type: none;
+    background:rgb(47,55,57);
+    font-size:15px;
+    margin: -15px 0 10px 10px;
+    padding: 10px;
+    min-width: 150px;
+}
+/*Mise en forme du pied de page*/
+footer
+{
+    border-top: solid;
+    border-color: white;
+    color: white;
+    text-align: right;
+}
+
+/*Mise en forme du formulaire d'inscription*/
+form#myform1 label { display:inline-block; width:120px; line-height: 0.85em; text-align: left;}
+form#myform1 input { display:inline-block; }
+form#myform1 input[type=submit] { color:#fff; background-color:green; }
+
+/*Mise en forme du formulaire de contact*/
+form#myform2 label { display:inline-block; width:170px; }
+form#myform2 input { display:inline-block; }
+form#myform2 input[type=submit] { float: right; color:#fff; background-color:green; }
+
+/*Mise en forme du formulaire de connexion*/
+form#myform3 label { display:inline-block; width:190px; line-height: 0.85em; text-align: left;}
+form#myform3 input { display:inline-block; }
+form#myform3 input[type=submit] { color:#fff; background-color:grey; }
+
+
+label 
+{
+    float: left; 
+}
+
+/*Mise en forme des titres*/
+h1
+{
+    text-align:center;
+    font-size: 35px;
+    color:white;
+    text-decoration: underline;
+    white-space: nowrap; /*Rajouté pour éviter le saut à la ligne car problème de mise en forme si pas assez de texte*/
+
+}
+h2
+{
+    text-align:left;
+    font-size: 1.5em;
+    color:rgb(68,43,170);
+}
+
+h3
+{
+    background-color:rgb(95,174,217);
+    min-height: 30px;
+    color:rgb(47,55,57);
+    font-size:0.9em;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+/*Mise en forme des liens*/
+a
+{
+    text-decoration: none;
+    color:rgb(95,174,217);
+    margin: auto;
+}
+a:hover
+{
+    color:white;
+}
+/*Style pour la rubrique en cours dans le menu*/
+.current a
+{
+    color: white;
+}
+
+/*Style paragraphe*/
+.news
+{
+    margin-top:0px;
+    color:rgb(95,174,217);
+    width:90%;
+    margin:auto;
+    text-align: justify;
+    margin-bottom: 50px;
+    line-height: 1.2em;
+}
+.news p
+{
+    margin-bottom: 30px;
+}
+br
+{
+    margin-bottom: 0.5em;
+}
+
+/*Résolution inférieur à 1024px*/
+@media screen and (max-width: 1024px)
+{
+    .bloc_page
+    {
+        width: auto;
+        max-width: 900px;
+
+    }
+    header
+    {
+        width: auto;
+    }
+    .news p
+    {
+        color: white;
+        font-size: 0.8em;
+    }
+    nav .element_menu ul
+    {
+    list-style-type: none;
+    background:rgb(47,55,57);
+    font-size:12px;
+    margin: -15px 0 5px 5px;
+    padding: 10px;
+    min-width: 0px;
+    }
+    h1
+    {
+    font-size: 1.3em;    
+    }
+    h2
+    {
+    font-size: 1em;    
+    }
+    h3
+    {
+    background-color:rgb(95,174,217);
+    min-height: 20px;
+    color:rgb(47,55,57);
+    font-size:0.8em;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 5px;
+    }
+}
+
